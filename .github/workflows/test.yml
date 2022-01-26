@@ -1,0 +1,29 @@
+name: Test
+
+on:
+  pull_request:
+    branches: # 아래의 브렌치에서 PR이 감지되면,
+      - main
+  push: # 아래의 브렌치에서 Push가 감지도되면, 해당 테스트를 실행합니다.
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 소스 코드를 가져옵니다.
+      - name: Checkout 
+        uses: actions/checkout@v2
+
+      # 파이썬 3.9를 설치합니다
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      # 테스트 실행
+      - name: Run tests
+        run: |
+          python test.py
