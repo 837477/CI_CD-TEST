@@ -5,7 +5,7 @@ class MyTest(TestCase):
         self.assertEqual(1+2, 3)
     
     def test_sub(self):
-        self.assertEqual(2-1, 0)
+        self.assertEqual(2-1, 1)
 
 if __name__ == "__main__":
     main(verbosity=2)
