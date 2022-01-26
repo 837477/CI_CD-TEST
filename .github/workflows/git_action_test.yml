@@ -11,8 +11,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./git_action_test
 
     steps:
       # 소스 코드를 가져옵니다.
