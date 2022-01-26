@@ -1,5 +1,5 @@
-# CI/CD Test
-__Github Action CI/CD 테스트__ <br>
+# DevOps SandBox
+__전반적인 CI/CD 관련 학습 및 테스트__ <br>
 <br><br>
 
 <div align=center>
