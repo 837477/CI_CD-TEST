@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  web:
+    image: "my_fastapi:0.1"
+    container_name: "my_fastapi"
+    restart: "unless-stopped"
+    ports:
+      - "80:80"
+    depends_on:
+      - "mongodb"
+  
+  mongodb:
+    image: "mongo:latest"
+    container_name: "my_mongodb"
+    restart: "unless-stopped"
+    ports:
+      - "27017:27017"
+    volumes:
+      - "/Users/seowjdals_/Desktop/docker-sandbox/docker-compose/fastapi-mongodb/mongodb_data:/data/db"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=secret
