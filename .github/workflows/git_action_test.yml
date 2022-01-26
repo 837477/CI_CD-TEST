@@ -26,4 +26,4 @@ jobs:
       # 테스트 실행
       - name: Run tests
         run: python test.py
-        working-directory: ./git_action_test
+        working-directory: ./CI_CD/git_action_test
