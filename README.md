@@ -19,11 +19,14 @@ DevOps 환경을 공부하면서, 다양한 테스트를 진행 할 공간입니
 <br><br>
 
 ## Index
+- docker/compose/fastapi-mongodb
+  - FastAPI 웹 서버와 MongoDB 컨테이너간의 Docker Compose를 이용한 빌드 및 통신 
+
 - CI_CD/git_action_test
   - Github Action을 통한 테스트 자동화
 
-- docker/compose/fastapi-mongodb
-  - FastAPI 웹 서버와 MongoDB 컨테이너간의 Docker Compose를 이용한 빌드 및 통신 
+- AWS_ECR/my_fastapi
+  - AWS ECR + Docker Image Push 자동화
 <br><br>
 
 ## Contributor
