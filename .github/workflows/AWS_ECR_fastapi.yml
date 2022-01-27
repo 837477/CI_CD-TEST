@@ -1,7 +1,7 @@
 on:
   push:
-    branches: # main 브랜치에 Push 이벤트가 발생했을 시
-      - main
+    branches: # ecr-fastapi 브랜치에 Push 이벤트가 발생했을 시
+      - ecr-fastapi
 
 name: Push ECR Image
 

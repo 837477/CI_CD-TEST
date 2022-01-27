@@ -3,7 +3,7 @@ name: Test
 on:
   pull_request:
     branches: # 아래의 브렌치에서 PR이 감지되면,
-      - main
+      - git-action-test
   push: # 아래의 브렌치에서 Push가 감지도되면, 해당 테스트를 실행합니다.
     branches:
       - main
